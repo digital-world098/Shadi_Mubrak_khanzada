@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadi Mubarak Adnan</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap');
+body{margin:0;min-height:100vh;display:flex;justify-content:center;align-items:center;background:radial-gradient(circle at top,#2c003e,#120018 40%,#000000 100%);font-family:'Poppins',sans-serif;overflow:hidden;color:#fff}
+body:before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1400&q=80') center/cover;opacity:.18;filter:blur(1px)}
+.card{position:relative;z-index:1;width:90%;max-width:760px;padding:50px;border-radius:30px;background:rgba(255,255,255,.08);backdrop-filter:blur(14px);box-shadow:0 20px 50px rgba(0,0,0,.45);text-align:center}
+h1{font-family:'Great Vibes',cursive;font-size:72px;margin:0;color:#ffd6f5}
+h1::first-letter{font-size:110px;color:#fff3a6;text-shadow:0 0 20px rgba(255,240,170,.8)}
+p{font-size:23px;line-height:1.8;margin:18px 0;color:#fff7fb}
+.quote{font-family:'Cinzel',serif;font-size:26px;letter-spacing:1px;color:#ffd9ec}
+button{margin-top:20px;padding:14px 30px;border:none;border-radius:40px;background:linear-gradient(90deg,#ff4b91,#ff9ac6);color:#fff;font-size:18px;font-weight:600;cursor:pointer}
+.hidden{opacity:0;max-height:0;overflow:hidden;transition:1s ease;font-size:26px;margin-top:18px}
+.show{opacity:1;max-height:120px}
+.secret{display:none}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>Shadi Mubarak</h1>
+<p class="quote">Khanzada Adnan & Life Partner</p>
+<p>Mohabbat ka safar ab duaon ke saaye mein shuru hua hai. Har subah khushiyon se roshan ho, har raat sukoon se mehke.</p>
+<p>Tum dono ki jori chand aur sitaron ki tarah hamesha chamakti rahe. Har pal pyar aur wafadari se bharpoor ho.</p>
+<span class="secret">Zafran</span>
+<button onclick="reveal()">Hidden Wish</button>
+<div id="msg" class="hidden"></div>
+</div>
+<script>
+function reveal(){const m=document.getElementById('msg');m.classList.add('show');m.innerHTML='💖 Is dil se nikli dua bhejne wala... <b>Zafran</b> 🌹';}
+</script>
+</body>
+</html>
